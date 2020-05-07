@@ -61,6 +61,5 @@ run: $(TARGET)
 #-------------------------------------------------------------
 clean:
 	-rm -fr $(OBJECTDIR)
-	-rm -f compile.log
 	-rm -f *.v
 

@@ -70,8 +70,5 @@ install: $(TARGET)
 #-------------------------------------------------------------
 clean:
 	-rm -fr $(OBJECTDIR)
-	-rm -fr ./Debug
-	-rm -f *.stackdump
-	-rm -f compile.log
 	-rm -f *.v
 
