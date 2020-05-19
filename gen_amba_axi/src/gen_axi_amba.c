@@ -93,7 +93,7 @@ fprintf(fo, ");\n");
 fprintf(fo, "     //-----------------------------------------------------------\n");
 gen_axi_signal( "SD_", fo );
 fprintf(fo, "     //-----------------------------------------------------------\n");
-fprintf(fo, "     // It is driven by axi_mtos_s?\n");
+fprintf(fo, "     // driven by axi_mtos_s?\n");
 
 #define MMX(A)\
 sprintf(str, "M%d_%s_S0", i, (A)); fprintf(fo, "     wire %-15s", str);\
@@ -122,7 +122,7 @@ MMY("WREADY")
 MMY("ARREADY")
 }
 fprintf(fo, "     //-----------------------------------------------------------\n");
-fprintf(fo, "     // It is driven by axi_stom_m?\n");
+fprintf(fo, "     // driven by axi_stom_m?\n");
 
 #define MMZ(A)\
 fprintf(fo, "     wire S%d_%s_M0", i, (A));\
