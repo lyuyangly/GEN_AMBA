@@ -153,7 +153,7 @@ for (i=1; i<numM; i++) fprintf(fo, "|SD_BREADY_M%d", i); fprintf(fo, ";\n");
 fprintf(fo, "     assign SD_RREADY = SD_RREADY_M0");
 for (i=1; i<numM; i++) fprintf(fo, "|SD_RREADY_M%d", i); fprintf(fo, ";\n");
 fprintf(fo, "     //-----------------------------------------------------------\n");
-fprintf(fo, "     // drivne by axi_mtos_m?\n");
+fprintf(fo, "     // driven by axi_mtos_m?\n");
 fprintf(fo, "     wire [NUM_MASTER-1:0] AWSELECT_OUT[0:NUM_SLAVE-1];\n");
 fprintf(fo, "     wire [NUM_MASTER-1:0] ARSELECT_OUT[0:NUM_SLAVE-1];\n");
 fprintf(fo, "     wire [NUM_MASTER-1:0] AWSELECT; // goes to default slave\n");
