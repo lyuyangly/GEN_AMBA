@@ -123,7 +123,7 @@ fprintf(fo, "           case (hmaster_delay)\n");
      for (i=0; i<num; i++) {
 fprintf(fo, "           4'h%X: HWDATA = HWDATA%d;\n", i, i);
      }
-fprintf(fo, "           default: HWDATA = 3'b0;\n");
+fprintf(fo, "           default: HWDATA = 32'b0;\n");
 fprintf(fo, "           endcase\n");
 fprintf(fo, "        end\n");
 fprintf(fo, "endmodule\n");
